@@ -27,13 +27,13 @@ def divide(num1, num2):
 def square(num1):
     """Return the square of the input."""
 
-    return num1 ** 2
+    return num1 * num2
 
 
 def cube(num1):
     """Return the cube of the input."""
 
-    return num1 ** 3
+    return num1 * num1 * num1
 
 
 def power(num1, num2):
@@ -46,3 +46,15 @@ def mod(num1, num2):
     """Return the remainder of num1 / num2."""
 
     return num1 % num2
+
+
+def add_mult(num1, num2, num3):
+    """Get the sum of num1 and num2, then multiply sum with num3. Returns the result"""
+
+    return multiply(add(num1, num2), num3)
+
+
+def add_cubes(num1, num2):
+    """Add the cubes of num1 and num2. Returns the result."""
+
+    return add(cube(num1), cube(num2))
